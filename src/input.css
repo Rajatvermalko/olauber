@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btnbor {
+  @apply border-2 tracking-wider rounded-md border-pritext bg-white  text-pritext font-extrabold hover:bg-pritext hover:text-white;
+}
+.images {
+  @apply w-7 h-7 mt-1 -mr-5;
+}
+.tra {
+  @apply tracking-wider;
+}
+.ablecell {
+  @apply lg:px-37 lg:py-3 md:px-19 md:py-3 lg:text-base xs:text-sm xs:px-1.5 xs:py-2;
+}
+.table1 tr:nth-child(even) {
+  background-color: #e9f3f5;
+}
+.cell1 {
+  @apply lg:pr-22 md:pr-52  text-left py-3 font-semibold;
+}
+.cell2 {
+  @apply lg:pl-32 md:pl-28 pr-0 text-right font-thin opacity-60;
+}
+.table2 tr {
+  @apply border-b-2 border-opacity-60 border-slate-200;
+}
+@layer base{
+.notimptxt {
+  @apply font-light text-sm opacity-60;
+}
+}
+
+@layer base {
+  a {
+    @apply text-violet-800 underline-offset-2 underline;
+  }
+}
+.inputfield {
+  @apply rounded-r-full rounded-l-full border px-20 placeholder:font-bold placeholder:text-sm bg-slate-200 py-3 md:mt-2 lg:mt-4 focus:outline-none md:w-102;
+}
